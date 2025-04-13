@@ -4,15 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta charset="utf-8" />
 <title>Run the Ladder | Career Fitness Training</title>
-<meta name="description" content="No quick fixes—just daily reps to boost your career fitness. Free 5-day warm-up live now!">
+<meta name="description" content="No quick fixes, just daily reps to boost your career fitness. Free 5-day warm-up live now!">
 <meta property="og:title" content="Run the Ladder | Career Fitness Training">
-<meta property="og:description" content="No quick fixes—just daily reps to boost your career fitness. Free 5-day warm-up live now!">
+<meta property="og:description" content="No quick fixes, just daily reps to boost your career fitness. Free 5-day warm-up live now!">
 <meta property="og:image" content="https://www.runtheladder.co/og_logo.png">
 <meta property="og:url" content="https://www.runtheladder.co">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <style>
+/* Fonts */
 .oswald-bold {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -46,55 +47,102 @@
   font-style: normal;
 }
 
+/* MailerLite overrides */
+#mlb2-23984029.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+  max-width: 100% !important;
+}
+#mlb2-23984029.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody {
+  padding: 0 !important;
+}
+
+#mlb2-23984029.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+  margin-bottom: 0 !important;
+}
+
+body #mlb2-23984029.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+  border-radius: 8px !important;
+}
+
+#mlb2-23984029.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent {
+  margin-bottom: 8px !important;
+}
+
+/* General */
 body {
-  margin: 0 48px;
-  padding-top: 24px;
-  background: #F5F5F5;
+  margin: 0;
 }
 
-h3 {
+header {
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0;
+}
+
+.logo {
+  width: 80%;
+  max-width: 400px;
+}
+
+.hero  {
+  margin: 36px;
   text-align: center;
-  margin: 36px 0 24px;
-  font-size: 1.6rem;
 }
 
-p {
+.footer  {
+  margin: 36px 36px 24px;
   text-align: center;
-  color: #4a4a4a;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  margin: 0 auto;
-  max-width: 900px;
 }
 
-p:last-child {
-  margin-bottom: 48px;
+.hero p, .footer p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content {
+  display: flex;
+  gap: 48px;
+  margin: 36px;
+  align-items: flex-start;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+section {
+  flex: 1;
+  border: 3px solid #1e1e1e;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+section h2 {
+  margin: 0;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section p:last-child {
+  margin-bottom: 0;
 }
 
 a {
-  color: #0072b1;
+  color: #4A90E2;
 }
 
-img.logo {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 36px;
+/* Mobile */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px;
+  }
 }
-
-dl {
-  margin: 0 auto 24px;
-  max-width: 900px;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-dd {
-  margin: 0;
-  padding: 4px 0 24px 0;
-}
-
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -118,40 +166,44 @@ dd {
 </head>
 <body>
 
-<img class="logo" src="./logo.png" alt="Run the Ladder Logo" />
+<header>
+  <img class="logo" src="./new_logo.png" alt="Run the Ladder Logo" />
+</header> 
 
-<p class="montserrat-regular">Run the Ladder is your career fitness program. No magic fixes, just daily reps to boost your career and land your next job or win that promotion. Built by a Netflix engineer with a 20-year tech background in startups, consulting, and coaching, while also competing in races.</p>
-
-<h3 class="montserrat-bold">Coming Soon: 5-Week Career Fitness Gains</h3>
-  
-<p class="montserrat-regular">For 5 weeks, get a daily 15-minute workouts tailored to your goals and weekly themes, plus recorded classes and live Q&A sessions with industry experts. Build lasting career fitness by establishing a routine.</p>
-
-<h3 class="montserrat-bold">Right Now: 5-day warm-up!</h3>
-
-<p class="montserrat-regular">Start with a 5-day warm-up, just a quick series of emails with prompts to think and write about. A nudge to spend 15 minutes each day focused on your career. Worth it?</p>
-
-<div class="form">
-  <div class="ml-embedded" data-form="EUcIQJ"></div>
+<div class="hero">
+  <h1 class="oswald-semibold">Run the Ladder - Career Fitness Training</h1>
+  <p class="montserrat-regular">Run the Ladder is your career fitness program. No magic fixes, just daily reps to boost your career, land your next job, or win that promotion. Built by a Netflix engineer with a 20-year tech background in startups, consulting, and coaching, while also competing in races.</p>
+  <p class="montserrat-regular">The tech industry's full of career coaches and interview prep, but they miss a key gap: most people lack baseline career fitness for big moves, scrambling last-minute when change hits. I've been there too and designed this program to build daily habits for lasting career fitness.</p>
 </div>
 
-<h3 class="montserrat-bold">FAQ</h3>
+<div class="content">
+  <section>
+    <h2 class="oswald-semibold">5-day Warm-Up</h2>
+    <p class="montserrat-regular">Start with a 5-day warm-up, just a quick series of emails with prompts to think and write about. A nudge to spend 15 minutes each day focused on your career. Worth it?</p>
+    
+    <p class="montserrat-bold">Try it out for free!</p>
 
-<dl>
-  <dt class="montserrat-semibold">Who am I?</dt>
-  <dd class="montserrat-regular">You can learn more about me on <a target="_blank" href="https://www.linkedin.com/in/danielljohnson">LinkedIn</a></dd>
+    <div class="form">
+      <div class="ml-embedded" data-form="EUcIQJ"></div>
+    </div>
+  </section>
+  <section>
+    <h2 class="oswald-semibold">5-Week Career Fitness Gains</h2>
+    <p class="montserrat-regular">For 5 weeks, get a daily 15-minute workouts tailored to your goals and weekly themes, plus recorded classes and live Q&A sessions with industry experts. Build lasting career fitness by establishing a routine.</p>
 
-  <dt class="montserrat-semibold">Why did I start this program?</dt>
-  <dd class="montserrat-regular">The tech industry's full of career coaches and interview prep, but they miss a key gap: most people lack baseline career fitness for big moves, scrambling last-minute when change hits. I've been there too and designed this program for myself as much as anyone.</dd>
+    <p class="montserrat-bold">Session 1 kicking off May '25, more info coming soon!</p>
+  </section>
+  <section>
+    <h2 class="oswald-semibold">1:1 Coaching</h2>
+    <p class="montserrat-regular">My 1:1 coaching focuses on transforming your career fitness. Whether it's a new job, a promotion, a role change, or just a clear path forward, I can help.</p>
 
-  <dt class="montserrat-semibold">What does this have to do with running?</dt>
-  <dd class="montserrat-regular">Runners know you can't prep for a race the day before, it takes months of steady training to peak, and most athletes maintain baseline fitness year-round to make it easier. That concept's missing in careers.</dd>
+    <p class="montserrat-bold"><a href="mailto:hello@runtheladder.co">Email Me</a> to set up a free intro call.</p>
+  </section>
+</div>
 
-  <dt class="montserrat-semibold">How does this compare to LeetCode prep or resume writing services?</dt>
-  <dd class="montserrat-regular">LeetCode and resume services are last-minute fixes, great for coding tests or polishing a pitch, but they don't build career fitness. LeetCode's a necessary evil with plenty of practice out there. Resumes are just one way to tell your career story; this program shapes that story step-by-step over 5 weeks.</dd>
-
-  <dt class="montserrat-semibold">Where's the rest of the details?</dt>
-  <dd class="montserrat-regular">I'm rolling this out step-by-step. If enough people join the free 5-day warm-up, the 5-week program launches next and this site will be updated to have the schedule, cost, etc.</dd>
-</dl>
+<div class="footer">
+  <p class="montserrat-regular">For more information about me and daily thoughts on career fitness, follow me on <a href="https://www.linkedin.com/in/danielljohnson/">LinkedIn</a>.</p>
+</div>
 
 </body>
 </html>
