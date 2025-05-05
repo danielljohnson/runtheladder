@@ -106,7 +106,7 @@ header {
 
 .content {
   display: flex;
-  gap: 48px;
+  gap: 24px;
   margin: 36px;
   align-items: flex-start;
 }
@@ -122,8 +122,14 @@ section {
   padding: 24px;
 }
 
-section:first-child {
+div.column {
   flex: 2;
+}
+
+div.column  {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 section h2 {
@@ -153,27 +159,8 @@ ol li {
   margin-bottom: 4px;
 }
 
-button {
-  border: none;
-  background: #1e1e1e;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 14px;
-  width: 100%;
-}
-
 .quote {
   margin-top: 24px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    gap: 24px;
-    margin: 24px;
-  }
 }
 
 .button {
@@ -184,6 +171,15 @@ button {
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px;
+  }
 }
 </style>
 <!-- MailerLite Universal -->
@@ -232,25 +228,38 @@ button {
 
     <p class="montserrat-regular quote"><em>"I love the format of the program: just enough to chew on each day for some introspection without becoming overwhelming" - Dan L.</em></p>
   </section> -->
-  <section>
-    <h2 class="oswald-semibold">5-Week Career Fitness Gains</h2>
+  <div class="column">
+    <section>
+      <h2 class="oswald-semibold">5-Week Career Fitness Gains</h2>
 
-    <p class="montserrat-regular">What if you were confident in the direction and resilience of your career? What if you knew you were ready for a sudden change? What if it only took 15 minutes a day to get there?</p>
+      <p class="montserrat-regular">What if you were confident in the direction and resilience of your career? What if you knew you were ready for a sudden change? What if it only took 15 minutes a day to get there?</p>
 
-    <p class="montserrat-regular">Each session is a 60 min workshop designed to establish lasting career fitness habits.</p>
+      <p class="montserrat-regular">Each session is a 45 min workshop designed to establish lasting career fitness habits.</p>
 
-    <ol>
-      <li class="montserrat-regular"><strong>Week 1</strong> - Goal Clarity</li>
-      <li class="montserrat-regular"><strong>Week 2</strong> - Network Strength</li>
-      <li class="montserrat-regular"><strong>Week 3</strong> - Impact Visibility</li>
-      <li class="montserrat-regular"><strong>Week 4</strong> - Industry Awareness</li>
-      <li class="montserrat-regular"><strong>Week 5</strong> - Routine Lock</li>
-    </ol>
+      <ol>
+        <li class="montserrat-regular"><strong>Week 1</strong> - Goal Clarity</li>
+        <li class="montserrat-regular"><strong>Week 2</strong> - Network Strength</li>
+        <li class="montserrat-regular"><strong>Week 3</strong> - Impact Visibility</li>
+        <li class="montserrat-regular"><strong>Week 4</strong> - Industry Awareness</li>
+        <li class="montserrat-regular"><strong>Week 5</strong> - Routine Lock</li>
+      </ol>
 
-    <p class="montserrat-regular">This isn't interview prep or resume review, it's a framework to own your career. Take 15 minutes each day from watching TV or doomscrolling and do something that matters.</p>
+      <p class="montserrat-regular">This isn't interview prep or resume review, it's a framework to own your career. Take 15 minutes each day from watching TV or doomscrolling and do something that matters.</p>
 
-    <p class="montserrat-bold"><a href="https://stan.store/runtheladder" class="button">Register</a></p>
-  </section>
+      <p class="montserrat-bold"><a href="https://stan.store/runtheladder" class="button">Register</a></p>
+    </section>
+
+    <section>
+      <h2 class="oswald-semibold">Storytelling for Interviews</h2>
+
+      <p class="montserrat-regular">Interviews almost always start with an opportunity to tell a story, and especially in behavioral rounds there are many more. This is the easiest part to prepare for because it's predictable, yet so many candidates just make it up on the spot. Why leave it to chance? In this session we'll define a framework for creating your stories, and an approach for questions you don't expect.</p>
+
+      <p class="montserrat-regular">Ready to stand out from the crowd? Own your story!</p>
+
+      <p class="montserrat-bold"><a href="https://stan.store/runtheladder" class="button">Register</a></p>
+    </section>
+  </div>
+
   <section>
     <h2 class="oswald-semibold">1:1 Coaching</h2>
     <p class="montserrat-regular">My 1:1 coaching will transform your career fitness. Whether you're seeking confidence in the direction of your career, chasing a new job, aiming for a promotion, or just seeking a clear path forward, I've been there and can guide you.</p>
