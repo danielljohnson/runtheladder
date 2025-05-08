@@ -106,9 +106,10 @@ header {
 
 .content {
   display: flex;
+  flex-direction: column;
   gap: 24px;
   margin: 36px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .footer p {
@@ -123,13 +124,15 @@ section {
 }
 
 div.column {
-  flex: 2;
+  flex: 1;
+  width: 100%;
 }
 
-div.column  {
+div.column {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
 }
 
 section h2 {
@@ -209,8 +212,8 @@ ol li {
 </header> 
 
 <div class="hero">
-  <h1 class="oswald-semibold">Run the Ladder - Career Fitness Workshops</h1>
-  <p class="montserrat-regular">Run the Ladder is your career fitness program. No magic fixes, just daily reps to boost your career, land your next job, or win that promotion. Led by a Netflix engineer with a 20-year tech background in startups, consulting, and coaching, while also competing in races.</p>
+  <h1 class="oswald-semibold">Run the Ladder - Career Fitness Training</h1>
+  <p class="montserrat-regular">Run the Ladder is your career fitness program. No magic fixes, just daily reps to boost your career, land your next job, or win that promotion. Designed by a Netflix engineer with a 20-year tech background in startups, consulting, and coaching, while also competing in races.</p>
 
   <p class="montserrat-regular">The tech industry's full of career coaches and interview prep, but they miss a key gap: most people lack baseline career fitness for big moves, scrambling last-minute when change hits. I've been there too and designed these workshops to build daily habits for lasting career fitness.</p>
 </div>
@@ -228,7 +231,7 @@ ol li {
 
     <p class="montserrat-regular quote"><em>"I love the format of the program: just enough to chew on each day for some introspection without becoming overwhelming" - Dan L.</em></p>
   </section> -->
-  <div class="column">
+  <!-- <div class="column">
     <section>
       <h2 class="oswald-semibold">5-Week Career Fitness Gains</h2>
 
@@ -258,7 +261,12 @@ ol li {
 
       <p class="montserrat-bold"><a href="https://stan.store/runtheladder" class="button">Register</a></p>
     </section>
-  </div>
+  </div> -->
+
+  <section>
+    <h2 class="oswald-semibold">Workshops</h2>
+    <p class="montserrat-regular">Coming soon, check back for updates!</p>
+  </section>
 
   <section>
     <h2 class="oswald-semibold">1:1 Coaching</h2>
