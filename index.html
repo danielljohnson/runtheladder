@@ -90,13 +90,15 @@ header {
 }
 
 .hero  {
-  margin: 36px;
+  margin: 36px auto;
   text-align: center;
+  max-width: 800px;
 }
 
 .footer  {
-  margin: 36px 36px 24px;
+  margin: 36px auto 24px;
   text-align: center;
+  max-width: 600px;
 }
 
 .hero p, .footer p {
@@ -108,8 +110,9 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: 36px;
+  margin: 36px auto;
   align-items: stretch;
+  max-width: 800px;
 }
 
 .footer p {
@@ -178,10 +181,16 @@ ol li {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    gap: 24px;
+  .hero {
     margin: 24px;
+  }
+  
+  .content {
+    margin: 24px;
+  }
+  
+  .footer {
+    margin: 24px 24px 24px;
   }
 }
 </style>
@@ -208,7 +217,7 @@ ol li {
 
   <p class="montserrat-regular">Most people wait until they need a new job to think about their career. By then, they're scrambling. This program builds the habits that keep you ready, confident, and moving forward.</p>
 
-  <p class="montserrat-regular">I'm a Netflix engineer with 20 years in startups and consulting. I've also coached athletes and trained for races myself. I know what consistent practice does for performance.</p>
+  <p class="montserrat-regular">I'm a Netflix engineer with 20 years in startups and consulting. I've also coached athletes and trained for races myself. I know what a consistent routine does for long-term performance.</p>
 </div>
 
 <div class="content">
