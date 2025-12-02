@@ -110,24 +110,12 @@ section {
   padding: 24px;
 }
 
-div.column {
-  flex: 1;
-  width: 100%;
-}
-
-div.column {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
-}
-
 section h2 {
   margin: 0;
 }
 
 section p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -147,6 +135,7 @@ ol {
 
 ol li, ul li {
   margin-bottom: 6px;
+  font-size: 18px;
 }
 
 ol ul {
@@ -156,6 +145,9 @@ ol ul {
 
 .quote {
   margin-top: 24px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .button {
@@ -166,6 +158,13 @@ ol ul {
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
+}
+
+.photo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  margin: 4px 0 0;
 }
 
 /* Mobile */
@@ -206,75 +205,65 @@ ol ul {
 
   <p class="montserrat-regular">Most people wait until they need a new job to think about their career. By then, they're scrambling. This program builds the habits that keep you ready, confident, and moving forward.</p>
 
-  <p class="montserrat-regular">I'm a Netflix engineer with 20 years in startups and consulting as a manager and as an individual contributor. I've coached athletes and trained for races myself. I know what a consistent routine does for long-term performance.</p>
+  <div class="dan-photo-container">
+    <p class="montserrat-regular">I'm a Netflix engineer with 20 years in startups and consulting as a manager and as an individual contributor. I've coached athletes and trained for races myself. I know what a consistent routine does for long-term performance.</p>
+
+    <img src="./dan.jpeg" alt="Dan Johnson" class="photo" />
+  </div>
 
   <p class="montserrat-regular">Do you have 10 minutes a day to make a change?</p>
 </div>
 
 <div class="content">
-  <div class="column">
-    <section>
-      <h2 class="oswald-semibold">Goal to Routine: A 30-Day Career Training Program.</h2>
+  <section>
+    <h2 class="oswald-semibold">Goal to Routine: A 30-Day Career Training Program.</h2>
 
-      <p class="montserrat-regular">You're mid-career in your field. You're good at what you do. But when someone asks "what's next?" you don't have a clear answer. You know you should be more intentional about your career, but between the day job and life, it never happens.</p>
+    <p class="montserrat-regular">You're mid-career in your field. You're good at what you do. But when someone asks "what's next?" you don't have a clear answer. You know you should be more intentional about your career, but between the day job and life, it never happens.</p>
 
-      <p class="montserrat-regular">This 30-day program gives you what you're missing: a concrete plan for where you're going and a routine to actually get there.</p>
+    <p class="montserrat-regular">This 30-day program gives you what you're missing: a concrete plan for where you're going and a routine to actually get there.</p>
 
-      <p class="montserrat-regular"><strong>Program Outline</strong></p>
+    <p class="montserrat-regular"><strong>Program Outline</strong></p>
+    
+    <ol>
+      <li class="montserrat-regular">Career Fitness Assessment</li>
+      <li class="montserrat-regular">60 min 1-on-1 Coaching Session</li>
+      <li class="montserrat-regular">30 Daily Reps (10 min each)</li>
+      <li class="montserrat-regular">Weekly Training Videos</li>
+      <li class="montserrat-regular">Weekly Live Sessions</li>
+    </ol>
+
+    <p class="montserrat-regular"><strong>This Might Be for You If...</strong></p>
+
+    <ol>
+      <li class="montserrat-regular">You don't know what questions to ask to assess your career.</li>
+      <li class="montserrat-regular">You need someone who will give you real feedback.</li>
+      <li class="montserrat-regular">You need a daily nudge to spend 10 minutes on your career.</li>
+      <li class="montserrat-regular">You want examples and learnings from someone who's been through it.</li>
+      <li class="montserrat-regular">You want a sense of community and a place to ask questions.</li>
+    </ol>
+
+    <p class="montserrat-regular"><strong>What You'll Leave With</strong>
       
-      <ol>
-        <li class="montserrat-regular">Career Fitness Assessment</li>
-        <li class="montserrat-regular">60 min 1-on-1 Coaching Session</li>
-        <li class="montserrat-regular">30 Daily Reps (10 min each)</li>
-        <li class="montserrat-regular">Weekly Training Videos</li>
-        <li class="montserrat-regular">Weekly Live Sessions</li>
-      </ol>
+    <ol>
+      <li class="montserrat-regular">A plan you believe in.</li>
+      <li class="montserrat-regular">A routine you can actually follow.</li>
+      <li class="montserrat-regular">Confidence in the direction of your career.</li>
+    </ol>
 
-      <p class="montserrat-regular"><strong>This Might Be for You If...</strong></p>
+    <p class="montserrat-regular"><strong>Details</strong>
 
-      <ol>
-        <li class="montserrat-regular">You don't know what questions to ask to assess your career.</li>
-        <li class="montserrat-regular">You need someone who will give you real feedback.</li>
-        <li class="montserrat-regular">You need a daily nudge to spend 10 minutes on your career.</li>
-        <li class="montserrat-regular">You want examples and learnings from someone who's been through it.</li>
-        <li class="montserrat-regular">You want a sense of community and a place to ask questions.</li>
-      </ol>
+    <ol>
+      <li class="montserrat-regular">Launching January 2026, with rolling enrollment.</li>
+      <li class="montserrat-regular">Cost: TBD</li>
+    </ol>
+  </section>
 
-      <p class="montserrat-regular"><strong>What You'll Leave With</strong>
-        
-      <ol>
-        <li class="montserrat-regular">A plan you believe in.</li>
-        <li class="montserrat-regular">A routine you can actually follow.</li>
-        <li class="montserrat-regular">Confidence in the direction of your career.</li>
-      </ol>
+  <div class="quotes">
+    <p class="montserrat-regular quote"><em>"Your storytelling tips helped me land a job after 8 months!"</em></p>
 
-      <p class="montserrat-regular"><strong>Details</strong>
+    <p class="montserrat-regular quote"><em>"Daniel's unique strength framework helped me realize I was not emphasizing what was unique about me as a candidate. I felt better equipped in interviews with hiring managers and recruiters after using his tips to find out what strengths I want to highlight. I believe developing this skill helped me land my most recent role where I got strong postivie feedback on being not a great technical fit, but also great culture fit."</em></p>
 
-      <ol>
-        <li class="montserrat-regular">Launching January 2026, with rolling enrollment.</li>
-        <li class="montserrat-regular">Cost: $799</li>
-      </ol>
-    </section>
-
-    <!-- <section>
-      <h2 class="oswald-semibold">Interview Prep</h2>
-
-      <p class="montserrat-regular">After 20 years as a software engineer, including 8 years in management up to the director level, I've worked everywhere from early-stage startups to Netflix, consulted with Fortune 500 companies, taught programming, and spoken at conferences. I've also designed hiring processes as a hiring manager and made the final calls on who gets hired.</p>
-
-      <p class="montserrat-regular">When you talk about technical decisions, trade-offs, or shipping under pressure, I understand it because I've lived it. And when we practice your interview stories, I know exactly what hiring managers are listening for.</p>
-
-      <p class="montserrat-regular">Technical skills get you in the room. Storytelling gets you the job.</p>
-
-      <p class="montserrat-regular">We focus on two things: telling your career story in a way that lands, and practicing it until it feels natural. Through mock interviews and real-time feedback, you'll learn to talk about your work the way hiring managers need to hear it, with impact, clarity, and confidence.</p>
-
-      <p class="montserrat-regular">I know what they're listening for because I've been one. Let's make sure they hear it.</p>
-
-      <p class="montserrat-bold"><a href="https://calendly.com/runtheladder/intro" class="button" target="_blank">Own Your Story - Schedule an Intro Call</a></p>
-
-      <p class="montserrat-regular quote"><em>"Dan has been an exceptional mentor throughout my frontend interview preparation. He brings a thoughtful and original approach to each session, tailoring questions that go beyond standard practice problems. When I struggled with certain topics or didn't perform well in mock interviews, Dan offered clear, constructive feedback without ever being discouraging. His guidance is both insightful and empathetic, making it easier to identify areas for growth and improve with confidence. I highly recommend him to anyone seeking serious, effective mentorship in technical interviewing."</em></p>
-
-      <p class="montserrat-regular quote"><em>"Your storytelling tips helped me land a job after 8 months!"</em></p>
-    </section> -->
+    <p class="montserrat-regular quote"><em>"Dan has been an exceptional mentor throughout my frontend interview preparation. He brings a thoughtful and original approach to each session, tailoring questions that go beyond standard practice problems. When I struggled with certain topics or didn't perform well in mock interviews, Dan offered clear, constructive feedback without ever being discouraging. His guidance is both insightful and empathetic, making it easier to identify areas for growth and improve with confidence. I highly recommend him to anyone seeking serious, effective mentorship in technical interviewing."</em></p>
   </div>
 </div>
 
