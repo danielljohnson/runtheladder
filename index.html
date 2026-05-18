@@ -42,9 +42,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: 
-      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(196,168,130,0.3) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(212,196,160,0.4) 0%, transparent 60%);
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
     pointer-events: none;
   }
 
@@ -87,6 +88,14 @@
     animation: fadeUp 0.8s ease forwards 0.6s;
   }
 
+  .hero-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.8s;
+  }
+
   .hero-cta {
     display: inline-block;
     align-self: flex-start;
@@ -112,16 +121,11 @@
     position: absolute;
     bottom: 40px;
     right: 60px;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--charcoal-light);
     opacity: 0;
     animation: fadeIn 1s ease forwards 1.2s;
   }
 
-  /* ABOUT STRIP */
+  /* ABOUT */
   .about {
     background: var(--charcoal);
     color: var(--beige);
@@ -201,7 +205,7 @@
 
   .offer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
     background: var(--beige-dark);
     border: 2px solid var(--beige-dark);
@@ -350,13 +354,6 @@
     align-items: center;
   }
 
-  .footer-brand {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-  }
-
   .footer-tagline {
     font-size: 13px;
     font-weight: 300;
@@ -390,7 +387,6 @@
 
   @media (max-width: 768px) {
     .hero { padding: 60px 24px; min-height: auto; }
-    .hero-logo { right: 24px; bottom: 24px; }
     .about { grid-template-columns: 1fr; padding: 60px 24px; gap: 48px; }
     .about-right { border-left: none; padding-left: 0; border-top: 1px solid rgba(232,217,188,0.15); padding-top: 48px; }
     .offer { padding: 60px 24px; }
@@ -412,7 +408,6 @@
   <h1 class="hero-headline">Routine<br>Beats<br><em>Luck.</em></h1>
   <p class="hero-sub">Start training for the career you actually want.</p>
   <a href="https://calendly.com/danielljohnson/intro" class="hero-cta">Book a Free Intro Call</a>
-  <!-- <div class="hero-logo"><img src="logo.png" alt="Run the Ladder" style="height:32px; filter: invert(1) brightness(0);"></div> -->
 </section>
 
 <!-- ABOUT -->
@@ -444,21 +439,22 @@
 <!-- OFFER -->
 <section class="offer">
   <p class="offer-label">The Program</p>
-  <div class="offer-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+  <div class="offer-grid">
     <div class="offer-card">
       <h3 class="offer-card-title">The Foundation</h3>
       <p class="offer-card-desc">Most engineers are good at their job but unprepared for what comes next. The Foundation changes that. A focused month that turns career intentions into a real routine so you have momentum and are ready for what's next.</p>
-
-      <p class="offer-card-desc">Four 60-minute sessions plus Slack for support and accountability throughout, structured around the one career goal that matters most to you right now.</p>
+      <p class="offer-card-desc">We start with a 60 minute session to map your goals and build your plan, then four weekly 45 minute sessions to execute it. Plus Slack for support and accountability throughout.</p>
       <ul class="offer-topics">
         <li>Career planning and routine design</li>
         <li>Networking and online presence</li>
         <li>Growing in your current role</li>
-        <li>IC <> EM transitions</li>
+        <li>IC &lt;&gt; EM transitions</li>
         <li>Job search and interview prep</li>
       </ul>
       <div class="offer-price">$3,500</div>
-      <a href="https://calendly.com/danielljohnson/intro" class="offer-cta">Start with a Free Intro →</a>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:32px;">
+        <a href="https://calendly.com/danielljohnson/intro" class="offer-cta" style="margin-top:0;">Start with a Free Intro</a>
+      </div>
     </div>
     <div class="offer-card">
       <h3 class="offer-card-title">The Distance</h3>
@@ -468,8 +464,11 @@
         <li>Move on the slow burn goals that never quite make it to your todo list</li>
         <li>A consistent outside perspective to help shape your career</li>
       </ul>
-      <div class="offer-price">$350<span style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:300; color:var(--charcoal-light); margin-left:4px;">/month</span></div>
-      <a href="https://calendly.com/danielljohnson/intro" class="offer-cta">Start with a Free Intro →</a>
+      <div class="offer-price">$350<span>/month</span></div>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:32px;">
+        <a href="https://calendly.com/danielljohnson/intro" class="offer-cta" style="margin-top:0;">Start with a Free Intro</a>
+        <a href="https://buy.stripe.com/6oU9ASauU7HKeOkg4mbfO04" class="offer-cta" style="margin-top:0; background: transparent; color: var(--charcoal); border: 1px solid var(--charcoal);">Sign Up</a>
+      </div>
     </div>
     <div class="offer-card" style="background: var(--beige); display:flex; flex-direction:column; justify-content:center;">
       <h3 style="font-family:'Archivo Black',sans-serif; font-size:clamp(24px,3vw,36px); line-height:1.15; color:var(--charcoal); max-width:360px; margin-bottom:24px;">Most people wait until they need a new job to think about their career.<br><em style="font-style:normal; color:var(--charcoal-light);">By then, they're scrambling.</em></h3>
@@ -500,7 +499,7 @@
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-brand"><img src="logo.png" alt="Run the Ladder" style="height:28px;"></div>
+    <div><img src="logo.png" alt="Run the Ladder" style="height:28px;"></div>
     <div class="footer-tagline" style="margin-top:8px;">Routine beats luck.</div>
   </div>
   <div class="footer-links">
