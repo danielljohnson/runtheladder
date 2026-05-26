@@ -89,14 +89,6 @@
     animation: fadeUp 0.8s ease forwards 0.6s;
   }
 
-  .hero-bottom {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards 0.8s;
-  }
-
   .hero-cta {
     display: inline-block;
     align-self: flex-start;
@@ -116,14 +108,6 @@
   .hero-cta:hover {
     background: var(--charcoal-mid);
     transform: translateY(-2px);
-  }
-
-  .hero-logo {
-    position: absolute;
-    bottom: 40px;
-    right: 60px;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards 1.2s;
   }
 
   /* ABOUT */
@@ -255,17 +239,31 @@
 
   .offer-price {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 48px;
+    font-size: 42px;
     margin-top: 32px;
     color: var(--charcoal);
+    line-height: 1.1;
   }
 
-  .offer-price span {
+  .offer-price-split {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 32px;
+  }
+
+  .offer-price-split-main {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 42px;
+    color: var(--charcoal);
+    line-height: 1.1;
+  }
+
+  .offer-price-split-sub {
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: var(--charcoal-light);
-    margin-left: 8px;
   }
 
   .offer-cta {
@@ -444,7 +442,7 @@
     <div class="offer-card">
       <h3 class="offer-card-title">The Foundation</h3>
       <p class="offer-card-desc">Most engineers are good at their job but unprepared for what comes next. The Foundation changes that. One focused month that turns career intentions into a real routine so you're ready when it matters.</p>
-      <p class="offer-card-desc">We start with a 60 minute session to map your goals and build your plan, then four weekly 45 minute sessions to execute it. Plus Slack for support and accountability throughout.</p>
+      <p class="offer-card-desc">We start with a 60 minute session to map your goals and build your plan, then four weekly 30 minute sessions to execute it. Plus Slack for ongoing conversation, support and accountability throughout.</p>
       <p class="offer-card-desc">Bring your goal, leave with a plan, a routine, and measurable progress.</p>
       <ul class="offer-topics">
         <li>Networking and online presence</li>
@@ -452,7 +450,7 @@
         <li>Growing in your current role</li>
         <li>Building career optionality</li>
       </ul>
-      <!-- <div class="offer-price"></div> -->
+      <div class="offer-price">$1,750</div>
       <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:32px;">
         <a href="https://calendly.com/danielljohnson/intro" class="offer-cta" style="margin-top:0;">Start with a Free Intro</a>
       </div>
@@ -460,15 +458,14 @@
     <div class="offer-card">
       <h3 class="offer-card-title">The Search</h3>
       <p class="offer-card-desc">Most engineers apply and hope. The Search is a structured two month program that replaces guesswork with a routine, so every week you know exactly what to do and can see if it's working.</p>
-
       <p class="offer-card-desc">Job searches are not a volume game with applications, or AI resumes for every role, they're a focused time investment with a focus on conversations, targeted applications, and building the kind of online presence that becomes a real career asset.</p>
-
-      <p class="offer-card-desc">We start with a 60 minute session to build your plan, then eight weekly 30 minute sessions to execute it. Plus Slack for support and accountability throughout.</p>
-
+      <p class="offer-card-desc">We start with a 60 minute session to build your plan, then eight weekly 30 minute sessions to execute it. Plus Slack for ongoing conversation, support and accountability throughout.</p>
       <p class="offer-card-desc">Already getting interviews but struggling to convert? I've been interviewing engineers for 15 years at all size companies, I know what works from the other side of the table.</p>
-
       <p class="offer-card-desc">Nobody can promise you a job, but a better process means every week you're making real progress instead of wondering if what you're doing is working.</p>
-      <!-- <div class="offer-price"><span>/month</span></div> -->
+      <div class="offer-price-split">
+        <div class="offer-price-split-main">$3,500</div>
+        <div class="offer-price-split-sub">Two payments of $1,750, billed monthly. If you get what you need sooner, cancel the second month.</div>
+      </div>
       <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:32px;">
         <a href="https://calendly.com/danielljohnson/intro" class="offer-cta" style="margin-top:0;">Start with a Free Intro</a>
       </div>
