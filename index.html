@@ -190,7 +190,7 @@
 
   .offer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2px;
     background: var(--beige-dark);
     border: 2px solid var(--beige-dark);
@@ -198,72 +198,21 @@
 
   .offer-card {
     background: var(--white);
-    padding: 48px;
+    padding: 56px 48px;
   }
 
   .offer-card-title {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 22px;
-    margin-bottom: 16px;
+    font-size: 26px;
+    margin-bottom: 32px;
   }
 
   .offer-card-desc {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 1.75;
     color: var(--charcoal-mid);
-    margin-bottom: 24px;
-  }
-
-  .offer-topics {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .offer-topics li {
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--charcoal-light);
-    padding-left: 16px;
-    position: relative;
-  }
-
-  .offer-topics li::before {
-    content: '·';
-    position: absolute;
-    left: 0;
-    color: var(--beige-deeper);
-  }
-
-  .offer-price {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 42px;
-    margin-top: 32px;
-    color: var(--charcoal);
-    line-height: 1.1;
-  }
-
-  .offer-price-split {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-top: 32px;
-  }
-
-  .offer-price-split-main {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 42px;
-    color: var(--charcoal);
-    line-height: 1.1;
-  }
-
-  .offer-price-split-sub {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--charcoal-light);
+    margin-bottom: 20px;
   }
 
   .offer-cta {
@@ -394,7 +343,6 @@
     .testimonials-grid { grid-template-columns: 1fr; }
     footer { padding: 40px 24px; flex-direction: column; gap: 24px; text-align: center; }
     .footer-links { flex-direction: column; gap: 16px; }
-    .offer-price { font-size: 36px; }
     .stat-number { font-size: 40px; }
   }
 </style>
@@ -437,43 +385,42 @@
 
 <!-- OFFER -->
 <section class="offer">
-  <p class="offer-label">The Programs</p>
+  <p class="offer-label">The Program</p>
   <div class="offer-grid">
+
     <div class="offer-card">
       <h3 class="offer-card-title">The Foundation</h3>
-      <p class="offer-card-desc">Most engineers are good at their job but unprepared for what comes next. The Foundation changes that. One focused month that turns career intentions into a real routine so you're ready when it matters.</p>
-      <p class="offer-card-desc">We start with a 60 minute session to map your goals and build your plan, then four weekly 30 minute sessions to execute it. Plus Slack for ongoing conversation, support and accountability throughout.</p>
-      <p class="offer-card-desc">Bring your goal, leave with a plan, a routine, and measurable progress.</p>
-      <ul class="offer-topics">
-        <li>Networking and online presence</li>
-        <li>IC &lt;&gt; EM transitions</li>
-        <li>Growing in your current role</li>
-        <li>Building career optionality</li>
-      </ul>
-      <!-- <div class="offer-price">$1,750</div> -->
+
+      <p class="offer-card-desc">Most engineers are good at their job but reactive about their career. The Foundation changes that.</p>
+
+      <p class="offer-card-desc">Whether you're actively searching or employed and building toward what's next, we create a focused routine around where you are right now, focused on conversations, targeted applications, online presence, or positioning for a promotion or transition.</p>
+
+      <p class="offer-card-desc">Borrowing proven approaches from fitness training, the best results come from consistency over time, not one intense or fragmented effort. Building a successful career works the same way, but starts with a strong foundation.</p>
+
+      <hr style="border: none; border-top: 1px solid var(--beige-dark); margin: 32px 0;">
+
+      <p class="offer-card-desc">60 minute kickoff to build your plan and routine.</p>
+      <p class="offer-card-desc">Four weekly 30 minute sessions to execute it.</p>
+      <p class="offer-card-desc">Slack for ongoing conversation, support, and accountability throughout.</p>
+
+      <p class="offer-card-desc" style="font-size: 15px; color: var(--charcoal-light); font-style: italic;">Designed as a one month program, but ongoing coaching is available for job searches.</p>
+
+      <hr style="border: none; border-top: 1px solid var(--beige-dark); margin: 32px 0;">
+
+      <p class="offer-card-desc">I've spent 20 years on both sides of the table, as an engineer, a manager, and someone who's interviewed and hired a lot of engineers. I know what separates the ones who move forward from the ones who stay stuck.</p>
+
+      <p class="offer-card-desc" style="font-style: italic; color: var(--charcoal-light);">Bring your goal, leave with a plan, a routine, and a way to know it's working.</p>
+
       <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:32px;">
         <a href="https://calendly.com/danielljohnson/intro" class="offer-cta" style="margin-top:0;">Start with a Free Intro</a>
       </div>
     </div>
-    <div class="offer-card">
-      <h3 class="offer-card-title">The Search</h3>
-      <p class="offer-card-desc">Most engineers apply and hope. The Search is a structured monthly program that replaces guesswork with a routine, so every week you know exactly what to do and can see if it's working.</p>
-      <p class="offer-card-desc">Job searches are not a volume game with applications, or AI resumes for every role, they're a focused time investment with a focus on conversations, targeted applications, and building the kind of online presence that becomes a real career asset.</p>
-      <p class="offer-card-desc">Each month we start with a 60 minute session to build or update your plan and routine, then four weekly 30 minute sessions to execute it. Plus Slack for ongoing conversation, support and accountability throughout.</p>
-      <p class="offer-card-desc">Already getting interviews but struggling to convert? I've been interviewing engineers for 15 years at all size companies, I know what works from the other side of the table.</p>
-      <p class="offer-card-desc">Nobody can promise you a job, but a better process means every week you're making real progress instead of wondering if what you're doing is working.</p>
-      <!-- <div class="offer-price-split">
-        <div class="offer-price-split-main">$3,500</div>
-        <div class="offer-price-split-sub">Two payments of $1,750, billed monthly. If you get what you need sooner, cancel the second month.</div>
-      </div> -->
-      <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:32px;">
-        <a href="https://calendly.com/danielljohnson/intro" class="offer-cta" style="margin-top:0;">Start with a Free Intro</a>
-      </div>
-    </div>
+
     <div class="offer-card" style="background: var(--beige); display:flex; flex-direction:column; justify-content:center;">
-      <h3 style="font-family:'Archivo Black',sans-serif; font-size:clamp(24px,3vw,36px); line-height:1.15; color:var(--charcoal); max-width:360px; margin-bottom:24px;">Most people wait until they need a new job to think about their career.<br><em style="font-style:normal; color:var(--charcoal-light);">By then, they're scrambling.</em></h3>
-      <p class="offer-card-desc" style="max-width:340px;">This program builds the habits that keep you ready, confident, and moving forward.</p>
+      <h3 style="font-family:'Archivo Black',sans-serif; font-size:clamp(24px,3vw,34px); line-height:1.15; color:var(--charcoal); max-width:360px; margin-bottom:24px;">Most people wait until they need a new job to think about their career.<br><em style="font-style:normal; color:var(--charcoal-light);">By then, they're scrambling.</em></h3>
+      <p class="offer-card-desc" style="max-width:340px;">This program builds the habits that keep you ready, confident, and moving forward, whether you're searching now or preparing for what's next.</p>
     </div>
+
   </div>
 </section>
 
