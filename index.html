@@ -325,6 +325,30 @@
     text-transform: uppercase;
   }
 
+  .offer-quote {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--charcoal);
+    border-left: 3px solid var(--charcoal);
+    padding: 24px 24px 24px 24px;
+    margin-top: 32px;
+    max-width: 340px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .offer-quote-author {
+    display: block;
+    margin-top: 16px;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--charcoal-light);
+    text-transform: uppercase;
+  }
+
   /* FOOTER */
   footer {
     background: var(--charcoal);
@@ -483,6 +507,11 @@
     <div class="offer-card" style="background: var(--beige); display:flex; flex-direction:column; justify-content:center;">
       <h3 style="font-family:'Archivo Black',sans-serif; font-size:clamp(24px,3vw,34px); line-height:1.15; color:var(--charcoal); max-width:360px; margin-bottom:24px;">Effective job searches run on daily routines.<br><em style="font-style:normal; color:var(--charcoal-light);">Don't run the marathon alone.</em></h3>
       <p class="offer-card-desc" style="max-width:340px;">This program turns your search into a focused routine, with a coach in your corner for every application, conversation, and interview along the way.</p>
+
+      <blockquote class="offer-quote">
+        "Dan got me into a routine where I was applying regularly and interviewing consistently, and helped me negotiate the offers I received. The result was an accepted offer with a 25% increase in salary and 35% increase in total comp."
+        <span class="offer-quote-author">Senior Software Engineer - Booz Allen</span>
+      </blockquote>
     </div>
 
   </div>
